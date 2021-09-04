@@ -1,5 +1,14 @@
 package com.mycorp.somelib
 
 class Helper {
-    float x,y,z
+    String name
+    Integer points
+
+    Helper(name, points) {
+
+        this.name = name
+        this.points = points
+    }
+
+    
 }
