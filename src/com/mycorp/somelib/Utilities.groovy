@@ -13,6 +13,6 @@ class Utilities implements Serializable {
     }
 
     def checkOutFrom(repo) {
-        git url: "git@github.com:jenkinsci/${repo}", credentialsId: "github_user"
+        steps.sh 'git url: "git@github.com:jenkinsci/${repo}", credentialsId: "github_user"'
     }
 }
