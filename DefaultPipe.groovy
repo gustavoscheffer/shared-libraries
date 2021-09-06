@@ -1,2 +1,6 @@
 @Library('shared-libraries') _
-evenOrOdd(currentBuild.getNumber())
+import com.mycorp.somelib.Helper
+
+pipe = new Helper('Gustavo Scheffer', 34)
+
+pipe.createBuild(currentBuild.getNumber())
