@@ -13,8 +13,7 @@ class Utilities implements Serializable {
     }
 
     def checkOutFrom(repo, branch) {
-        steps.sh "git init"
-        steps.sh "git remote add origin https://github.com/jenkinsci/${repo}"
-        steps.sh "git pull origin ${branch}"
+        steps.sh "rm -rvf ${repo}"
+        steps.sh "git clone https://github.com/jenkinsci/${repo} --branch=${branch}"
     }
 }
