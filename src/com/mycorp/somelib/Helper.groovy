@@ -10,9 +10,9 @@ class Helper {
         this.age = age
     }
     def prepare(){
-        sh "echo this is my function in Shared Library"
+        return sh "echo this is my function in Shared Library"
     }
     def count(){
-        sh "echo this is my function in Shared Library"
+        return sh "echo this is my function in Shared Library"
     }
 }
