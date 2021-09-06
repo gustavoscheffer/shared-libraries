@@ -1,6 +1,8 @@
 @Library('shared-libraries') _
 import com.mycorp.somelib.Helper
 
-pipe = new Helper('Gustavo Scheffer', 34)
+int useSomeLib(Helper helper) {
+    return helper.showMessage()
+}
 
-pipe.createBuild(currentBuild.getNumber())
+echo useSomeLib(new Helper('This is my Pipe!'))
