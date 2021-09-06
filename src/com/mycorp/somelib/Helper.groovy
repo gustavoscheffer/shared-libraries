@@ -10,9 +10,9 @@ class Helper {
         this.points = points
     }
     def prepare(){
-        println "Method PREPARE!"
+        sh "echo this is my function in Shared Library"
     }
     def count(){
-        println "Method COUNT!"
+        sh "echo this is my function in Shared Library"
     }
 }
