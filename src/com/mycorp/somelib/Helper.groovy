@@ -2,12 +2,12 @@ package com.mycorp.somelib
 
 class Helper {
     String name
-    Integer points
+    Integer age
 
-    Helper(name, points) {
+    Helper(name, age) {
 
         this.name = name
-        this.points = points
+        this.age = age
     }
     def prepare(){
         sh "echo this is my function in Shared Library"
