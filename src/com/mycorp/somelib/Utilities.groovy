@@ -18,7 +18,10 @@ class Utilities implements Serializable {
     }
 
     def newStage(repo, branch, args){
-        checkOutFrom(repo,branch)
-        mvn(args)    
+        stage ('First Stage'){
+            echo 'Hi!!!'
+        }
+//        checkOutFrom(repo,branch)
+//        mvn(args)    
     }
 }
