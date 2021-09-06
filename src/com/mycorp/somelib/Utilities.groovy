@@ -19,7 +19,7 @@ class Utilities implements Serializable {
 
     def newStage(repo, branch, args){
         steps.stage('Checkout SCM') {
-            steps.sh "All right!"
+            steps.sh "echo All right!"
         }
     }
 
