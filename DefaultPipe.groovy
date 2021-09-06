@@ -1,8 +1,8 @@
 @Library('shared-libraries') _
-import com.mycorp.somelib.Helper
+import com.mycorp.somelib.Utilities
 
-int useSomeLib(Helper helper) {
-    return helper.showMessage()
+def utils = new Utilities(this)
+
+node {
+    utils.mvn 'clean mvn'
 }
-
-echo useSomeLib(new Helper('This is my Pipe 2!'))
