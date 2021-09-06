@@ -5,4 +5,4 @@ int useSomeLib(Helper helper) {
     return helper.showMessage()
 }
 
-echo useSomeLib(new Helper('This is my Pipe!'))
+echo useSomeLib(new Helper('This is my Pipe 2!'))
