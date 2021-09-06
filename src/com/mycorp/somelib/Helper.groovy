@@ -7,7 +7,7 @@ class Helper {
         this.message = message
     }
     def showMessage(){
-        println "This is my PIPE!"
+        echo "This is my PIPE!"
     }
 
 }
