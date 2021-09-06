@@ -7,7 +7,12 @@ class Utilities implements Serializable {
     Utilities(steps) {
         this.steps = steps
     }
+    
     def mvn(args){
         steps.sh "${steps.tool 'Maven'}/bin/mvn -o ${args}"
+    }
+
+    def checkOutFrom(repo) {
+        git url: "git@github.com:jenkinsci/${repo}"
     }
 }
