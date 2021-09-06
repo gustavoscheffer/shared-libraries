@@ -17,7 +17,7 @@ class Utilities implements Serializable {
         steps.sh "git clone https://github.com/jenkinsci/${repo} --branch=${branch}"
     }
 
-    def newStage (repo, branch, args){
+    def newStage(repo, branch, args){
         checkOutFrom(repo,branch)
         mvn(args)    
     }
