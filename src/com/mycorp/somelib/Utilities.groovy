@@ -13,6 +13,6 @@ class Utilities implements Serializable {
     }
 
     def checkOutFrom(repo) {
-        steps.sh "git clone https://github.com:jenkinsci/${repo}"
+        steps.sh "git clone https://github.com/jenkinsci/${repo}"
     }
 }
