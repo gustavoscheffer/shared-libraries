@@ -9,6 +9,10 @@ class Helper {
         this.name = name
         this.points = points
     }
-
-    
+    def prepare(){
+        println "Method PREPARE!"
+    }
+    def count(){
+        println "Method COUNT!"
+    }
 }
