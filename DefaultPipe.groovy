@@ -5,5 +5,5 @@ def utils = new Utilities(this)
 
 node {
     utils.checkOutFrom('lucene-search-plugin')
-    utils.mvn('clean mvn')
+    utils.mvn('clean package')
 }
