@@ -1,6 +1,7 @@
 package com.mycorp.somelib
 
 class Utilities implements Serializable {
+    
     def steps
 
     Utilities(steps) {
